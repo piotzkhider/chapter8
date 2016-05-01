@@ -25,5 +25,4 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     if File.exists? afterScriptPath then
         config.vm.provision "shell", path: afterScriptPath
     end
-    config.vm.box_version = ">= 0.3.0, < 0.4.0"
 end

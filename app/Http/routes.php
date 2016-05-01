@@ -2,7 +2,7 @@
 /**
  * 本アプリケーションで利用しているルートリストは、次のコマンドで確認できます。
  * $ php artisan route:list
- */
+ *
 \Route::controller('auth', 'Auth\AuthController',
     [
         'postLogin'    => 'post.login',
@@ -20,3 +20,4 @@
 get('/', 'ApplicationController@index');
 \Route::resource('entry', 'EntryController', ['only' => ['index', 'show']]);
 \Route::resource('comment', 'CommentController', ['only' => ['store']]);
+*/
